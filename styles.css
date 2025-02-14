@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: kudaFont, sans-serif;
+    font-weight: 900;
+}
+@font-face {
+    font-family: kudaFont;
+    src: url(./Muli-Bold.ttf.ttf);
+    font-weight: bolder;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.navbar-section{
+    padding: 20px 40px;
+    background-color: #fff;
+    box-shadow: 0px 0px 29px #ececec;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-side1{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+.nav-side1 ul li{
+    display: inline-block;
+    padding: 0 10px;
+}
+.nav-side1 ul li a{
+    text-decoration: none;
+    color: #40196d;
+    font-weight: 500;
+    font-size: 14px;
+}
+.nav-side2{
+    margin-right: 40px;
+}
+.nav-side2 a{
+    text-decoration: none;
+    color: #40196d;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0 20px;
+    margin-right: 20px;
+}
+.nav-side2 a:nth-child(2){
+    background-color: #40196d;
+    color: white;
+    font-weight: 900;
+    font-size: 14px;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+.nav-side2 a:nth-child(2):hover{
+    transform: translateY(20px);
+    transition: 2s linear;
+    
+}
+.money-africa{
+    display: flex;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+    padding: 7% 10%;
+    gap: 3rem;
+}
+.side-1-money{
+    padding-right: 10%;
+}
+.side-1-money h1{
+    font-size: 3em;
+    font-weight: 900;
+    color: #40196d;
+    margin-bottom: 33px;
+}
+.side-1-money p{
+    font-size: 17.5px;
+    color: #000000;
+    margin-bottom: 33px;
+    font-weight: 700;
+}
+.bank-verified{
+    display: flex;
+    gap: 2rem;
+    margin-top: 33px;
+}
+.bank-verified p{
+    font-size: 12px;
+    color: grey;
+}
+.side-2-anime{
+    position: relative;
+}
+.side-2-anime2{
+    position: absolute;
+}
+.circle2{
+    position: relative;
+    top: -490px;
+    left: 60px;
+    width: 430px !important;
+    height: 430px !important;
+}
+.circle3{
+    position: relative;
+    top: -430px;
+    left: 118px;
+    width: 310px !important;
+    height: 310px !important;
+}
+.circle1{
+    width: 550px;
+    height: 550px;
+    border: 1px solid rgba(223, 227, 255, 0.418);
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle1 .svg-container{
+    position: absolute;
+    fill: #40196d;
+}
+.circle1 .svg-1{
+    position: absolute;
+    animation: myrotate 7s linear infinite;
+}
+.circle1 .svg-2{
+    position: absolute;
+    animation: myrotate2 7s linear infinite;
+}
+.circle1 .svg-3{
+    position: absolute;
+    animation: myrotate3 7s linear infinite;
+}
+.svg-4{
+    position: absolute;
+    animation: myrotate4 7s linear infinite;
+}  
+.svg-5{
+    position: absolute;
+    animation: myrotate5 7s linear infinite;
+}  
+
+@keyframes myrotate5 {
+    0% {
+      transform: rotate(0deg) translateX(-215px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translateX(-215px) rotate(360deg);
+    }
+}
+@keyframes myrotate4 {
+    0% {
+      transform: rotate(360deg) translateX(-215px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg) translateX(-215px) rotate(-270deg);
+    }
+}
+@keyframes myrotate {
+    0% {
+      transform: rotate(0deg) translateX(275px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translateX(275px) rotate(-360deg);
+    }
+}
+@keyframes myrotate2 {
+    0% {
+      transform: rotate(360deg) translateX(275px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg) translateX(275px) rotate(-360deg);
+    }
+}
+@keyframes myrotate3 {
+    0% {
+      transform: rotate(180deg) translateX(275px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(-180deg) translateX(275px) rotate(-360deg);
+    }
+}
+.grid-showcase{
+    width: 100%;
+    gap: 2rem;
+    padding: 8%;
+    margin: auto;
+}
+.card-1{
+    /* width: 350px; */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 2px #dddada;
+}
+.card-1 p{
+    color: #40196d;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+.svg-container{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgb(223, 227, 255);
+    margin-bottom: 20px;
+    padding: 10px 12px;
+}
+.card-1 svg{
+    fill: #40196d;
+    width: 20px;
+    object-fit: contain;
+    object-position: center !important;
+}
+.second-row{
+    gap: 2rem;
+}
+.phone-money-section{
+    padding: 8%;
+    width: 100%;
+    gap: 10rem;
+    color: #40196d;
+}
+.phone-money-section h1{
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.phone-money-section p{
+    color: #4b4a4a;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.phone-money-section a{
+    color: #40196d;
+    font-size: 16px;
+    font-weight: bolder;
+}
+.phone-money-right{
+    margin-left: 10%;
+}
+.div-svg{
+    width: 350px;
+    height: 350px;
+    background-color: rgb(223, 227, 255);
+    border-radius: 50%;
+    background-image: url(./img/svg-1.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+@media screen and (max-width: 1130px) {
+    .money-africa{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1180px) {
+    .phone-money-section{
+        padding: 8%;
+        width: 100%;
+        gap: 1rem;
+        color: #40196d;
+    }
+    .phone-money-right{
+        margin-left: 5%;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .phone-money-section{
+        display: flex;
+        text-align: center;
+        padding: 40px 20px;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        color: #40196d;
+    }
+    .phone-money-right{
+        margin-left: 0;
+        margin-top: 40px;
+    }
+    .div-svg{
+        width: 350px;
+        height: 350px;
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .phone-money-section{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding: 40px 10px;
+    }
+    .div-svg{
+        width: 250px;
+        height: 250px;
+        margin: auto;
+    }
+}
