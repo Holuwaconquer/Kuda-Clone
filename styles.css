@@ -2,14 +2,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: kudaFont, sans-serif;
-    font-weight: bold;
+    /* font-family: kudaFont, sans-serif; */
+    font-weight: bolder;
+    color: #40196d;
 }
 @font-face {
     font-family: kudaFont;
-    src: url(./Muli-Bold.ttf);
-    font-weight: bold;
-    
+    src: url(./fonts/Muli-SemiBold.ttf);
+    font-weight: bold; 
+}
+
+.mobile-menu{
+    display: none;
+}
+a{
+    color: #40196d;
 }
 body::-webkit-scrollbar {
     display: none;
@@ -26,6 +33,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: kudaFont, sans-serif;
 }
 .top-section{
     position: relative;
@@ -40,7 +48,7 @@ body{
     position: absolute;
     top: 60px;
     left: 16.5%;
-    z-index: 99999;
+    z-index: 1;
     background-color: #fff;
     width: 450px;
     border-radius: 8px;
@@ -280,9 +288,6 @@ body{
     transition: 0.6s;
     transform: translateY(-4px) !important;
 }
-.dropdown-link{
-    display: none;
-}
 .money-africa{
     display: flex;
     overflow-x: hidden;
@@ -300,9 +305,10 @@ body{
 }
 .side-1-money h1{
     font-size: 3em;
-    font-weight: bold;
+    font-weight: bolder;
     color: #40196d;
     margin-bottom: 33px;
+    font-family: kudaFont2, sans-serif;
 }
 .side-1-money p{
     font-size: 17.5px;
@@ -419,46 +425,6 @@ body{
     animation: myrotate5 7s linear infinite;
 }  
 
-/* @keyframes myrotate5 {
-    0% {
-      transform: rotate(0deg) translateX(-215px) rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg) translateX(-215px) rotate(0deg);
-    }
-}
-@keyframes myrotate4 {
-    0% {
-      transform: rotate(180deg) translateX(215px) rotate(0deg);
-    }
-    100% {
-      transform: rotate(-180deg) translateX(215px) rotate(0deg);
-    }
-}
-@keyframes myrotate {
-    0% {
-      transform: rotate(0deg) translateX(275px) rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg) translateX(275px) rotate(0deg);
-    }
-}
-@keyframes myrotate2 {
-    0% {
-      transform: rotate(360deg) translateX(275px) rotate(0deg);
-    }
-    100% {
-      transform: rotate(0deg) translateX(275px) rotate(0deg);
-    }
-}
-@keyframes myrotate3 {
-    0% {
-      transform: rotate(360deg) translateX(-275px) rotate(0deg);
-    }
-    100% {
-      transform: rotate(0deg) translateX(-275px) rotate(0deg);
-    }
-} */
 .grid-showcase{
     width: 100%;
     gap: 2rem;
@@ -470,7 +436,7 @@ body{
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0px 0px 20px 2px #dddada;
+    box-shadow: 0px 0px 20px 2px #ebe9e9;
 }
 .card-1 p{
     color: #40196d;
@@ -495,24 +461,16 @@ body{
 .second-row{
     gap: 2rem;
 }
-.phone-money-section{
-    padding: 50px 20px;
-    margin: 40px 0;
-    width: 70%;
-    color: #40196d;
-    display: flex;
-    gap: 5em;
-    align-items: center;
-    margin: auto;
-}
+
 .phone-money-section h1{
-    font-weight: 700;
-    font-size: 3rem;
+    font-weight: bolder;
+    font-size: 2.5rem;
     margin-bottom: 20px;
+    font-family: kudaFont2, sans-serif
 }
 .phone-money-section p{
     color: #4b4a4a;
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 20px;
 }
 .phone-money-section a{
@@ -520,6 +478,7 @@ body{
     font-size: 16px;
     font-weight: 600;
 }
+
 .div-svg{
     width: 350px;
     height: 350px;
@@ -534,6 +493,99 @@ body{
 .div-svg-1{
     position: absolute;
     width: 200px;
+}
+.div-svg-money{
+    max-width: 350px;
+    height: 350px;
+    background-color: rgba(160, 244, 247, 0.555);
+    border-radius: 50%;
+    position: relative;
+}
+.div-svg-money img{
+    max-width: 300px;
+    position: absolute;
+}
+.phone-money-section{
+    padding: 6%;
+}
+.money-spend{
+    padding: 6%;
+}
+.money-spend p{
+    color: #4b4a4a;
+    font-size: 14px;
+}
+.money-manage{
+    padding: 10%;
+    color: #40196d;
+}
+.money-manage p{
+    color: #4b4a4a;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.money-img-1{
+    top: 10px; 
+    left: -100px;
+}
+.money-img-2{
+    top: 60px; 
+    left: -100px;
+}
+.money-img-3{
+    top: 110px; 
+    left: -100px;
+}
+.money-img-4{
+    top: 160px; 
+    left: -100px;
+}
+.money-img-5{
+    top: 210px; 
+    left: -100px;
+}
+.money-img-6{
+    top: 260px; 
+    left: -100px;
+}
+.money-img-7{
+    top: 30px;
+    right: -100px;
+}
+.money-img-8{
+    top: 90px; 
+    right: -100px;
+}
+.money-img-9{
+    top: 150px; 
+    right: -100px;
+    
+}
+.money-img-0{
+    top: 210px; 
+    right: -100px;
+}
+.turn-off{
+    padding: 8%;
+}
+.turn-off-text p{
+    color: #4b4a4a;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.certified-img1 a{
+    filter: grayscale(5);
+}
+.certified-img1 a:hover{
+    filter: none;
+    transition: 0.2s;
+}
+.certified-img2 a{
+    filter: grayscale();
+}
+.certified-img2 a:hover{
+    filter: none;
+    transition: 0.2s;
 }
 .kuddy-card{
     position: absolute;
@@ -554,7 +606,58 @@ body{
     100% {transform: scale(100%);}
 }
 /* media queries */
-@media screen and (max-width: 1130px) {
+@media screen and (max-width: 1100px){
+    #mobile-menu{
+        display: none;
+        position: fixed;
+        background-color: #fff;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 9999999;
+        padding: 20px;
+        overflow-y: hidden !important;
+    }
+    .join-kuda2{
+        border: none;
+        padding: 10px 30px;
+        background-color: #40196d;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 10px;
+        font-weight: 700;
+        margin-right: 10px;
+    }
+    .join-kuda3{
+        border: none;
+        padding: 10px 30px;
+        background-color: #d5b4fafd;
+        color: black;
+        font-size: 14px;
+        border-radius: 10px;
+        font-weight: 700;
+    }
+    .mobile-sign{
+        margin-top: 40px;
+    }
+    .mobile-list-item{
+        margin-top: 20px;
+    }
+    .mobile-list-item ul li{
+        padding: 20px 0;
+        border-bottom: 1px solid #e1cff5;
+        list-style-type: none;
+    }
+    .mobile-list-item ul li a{
+        color: #40196d;
+        text-decoration: none;
+    }
+    
+    .join-kuda2:hover{
+        transition: 0.6s;
+        transform: translateY(-4px) !important;
+    }
     .money-africa{
         display: flex;
         flex-direction: column;
@@ -596,127 +699,55 @@ body{
         bottom: -270px; 
         left: 220px;
     }
-    .phone-money-section{
-        padding: 50px;
+    .money-spend{
         width: 100%;
-        color: #40196d;
-        display: block;
-        align-items: center;
-        margin: auto;  
+        margin: auto;
         text-align: center;
+        padding: 40px 10%;
+    }
+    .money-manage-row{
+        flex-direction: column-reverse;
+    }
+    .money-manage{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding: 40px 10%;   
+    }
+    .money-text{
+        margin-bottom: 15%;
+    }
+    .money-spend-left{
+        margin-bottom: 15%;
+    }
+    .turn-off{
+        margin: auto;
+        text-align: center;
+        padding: 40px 10px;
+    }
+    .turn-off-row{
+        flex-direction: column-reverse;
+    }
+    .turn-off-text{
+        margin-bottom: 15%;
+    }
+    .phone-money-section{
+        /* width: 100%; */
+        margin: auto;
+        text-align: center;
+        padding: 40px 10px;
     }
     .phone-money-left{
-        margin-bottom: 50px;
+        margin-bottom: 15%;
     }
     .menu-dropdown{
-        display: inline-block
+        display: inline-block;
     }
-    .dropdown-link{
-        display: none;
-        position: absolute;
-        top: 50px;
-        left: 0;
-        background-color: #f9f9f9;
-        width: 100vw;
-        height: 100vh;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        padding: 12px 16px;
-        z-index: 0;
-        color: black;
+    .div-svg-money{
+        width: 350px;
+        height: 350px;
+        margin: auto;
     }
-    .menu-dropdown:hover .dropdown-link{
-        display: block;
-    }
-    .dropdown-link ul li{
-        list-style-type: none;
-    }
-    .dropdown-link ul li a{
-        text-decoration: none;
-        color: black;
-        list-style-type: none;
-    }
-}
-@media only screen and (min-width: 992px) and (max-width: 1180px) {    
-    .circle2{
-        position: relative;
-        top: -390px;
-        left: 60px;
-        width: 330px !important;
-        height: 330px !important;
-    }
-    .circle3{
-        position: relative;
-        top: -330px;
-        left: 118px;
-        width: 210px !important;
-        height: 210px !important;
-    }
-    .circle1{
-        width: 450px;
-        height: 450px;
-        border: 1px solid rgba(223, 227, 255, 0.418);
-        border-radius: 50%;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    @keyframes myrotate5 {
-        0% {
-          transform: rotate(0deg) translateX(-165px) rotate(0deg);
-        }
-        100% {
-          transform: rotate(360deg) translateX(-165px) rotate(0deg);
-        }
-    }
-    @keyframes myrotate4 {
-        0% {
-          transform: rotate(180deg) translateX(165px) rotate(0deg);
-        }
-        100% {
-          transform: rotate(-180deg) translateX(165px) rotate(0deg);
-        }
-    }
-    @keyframes myrotate {
-        0% {
-          transform: rotate(0deg) translateX(225px) rotate(0deg);
-        }
-        100% {
-          transform: rotate(360deg) translateX(225px) rotate(0deg);
-        }
-    }
-    @keyframes myrotate2 {
-        0% {
-          transform: rotate(360deg) translateX(225px) rotate(0deg);
-        }
-        100% {
-          transform: rotate(0deg) translateX(225px) rotate(0deg);
-        }
-    }
-    @keyframes myrotate3 {
-        0% {
-          transform: rotate(270deg) translateX(225px) rotate(0deg);
-        }
-        100% {
-          transform: rotate(-270deg) translateX(225px) rotate(0deg);
-        }    
-    }  
-}
-
-@media only screen and (max-width: 991px) {
-    /* .phone-money-section{
-        display: flex;
-        text-align: center;
-        padding: 40px 20px;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-        color: #40196d;
-    } */
-    /* .phone-money-right{
-        margin-left: 0;
-        margin-top: 40px;
-    } */
     .div-svg{
         width: 350px;
         height: 350px;
@@ -787,7 +818,7 @@ body{
         }    
     }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 521px) {
     .phone-money-section{
         width: 100%;
         margin: auto;
@@ -801,6 +832,11 @@ body{
     }
     .circleimg img{
         width: 230px;
+    }
+    .div-svg-money{
+        width: 250px;
+        height: 250px;
+        margin: auto;
     }
     .div-svg{
         width: 250px;
@@ -878,7 +914,58 @@ body{
           transform: rotate(360deg) translateX(175px) rotate(0deg);
         }    
     }
-
-    
-
+    .div-svg-money img{
+        max-width: 200px;
+    }
+    .money-img-1{
+        top: 10px; 
+        left: -50px;
+    }
+    .money-img-2{
+        top: 45px; 
+        left: -50px;
+    }
+    .money-img-3{
+        top: 80px; 
+        left: -50px;
+    }
+    .money-img-4{
+        top: 115px; 
+        left: -50px;
+    }
+    .money-img-5{
+        top: 150px; 
+        left: -50px;
+    }
+    .money-img-6{
+        top: 185px; 
+        left: -50px;
+    }
+    .money-img-7{
+        top: 25px;
+        right: -80px;
+    }
+    .money-img-8{
+        top: 70px; 
+        right: -80px;
+    }
+    .money-img-9{
+        top: 110px; 
+        right: -80px;
+        
+    }
+    .money-img-0{
+        top: 150px; 
+        right: -80px;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1100px) {
+    .phone-money-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .money-spend{
+        display: flex;
+        flex-direction: column;
+    }
 }
