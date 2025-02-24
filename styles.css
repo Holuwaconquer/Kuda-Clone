@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     /* font-family: kudaFont, sans-serif; */
     font-weight: bolder;
     color: #40196d;
@@ -34,6 +34,7 @@ body{
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: kudaFont, sans-serif;
+    overflow-x: hidden;
 }
 .top-section{
     position: relative;
@@ -48,7 +49,7 @@ body{
     position: absolute;
     top: 60px;
     left: 16.5%;
-    z-index: 1;
+    /* z-index: 1; */
     background-color: #fff;
     width: 450px;
     border-radius: 8px;
@@ -56,6 +57,25 @@ body{
     gap: 1rem;
     box-shadow: 0px 0px 20px 0px rgb(187, 186, 186);
     /* -webkit-backdrop-filter: initial; */
+    animation: zoomUp 0.1s linear;
+}
+@keyframes zoomUp {
+    /* 0% {transform: scale(100%, 0%);}
+    100% {transform: scale(100%, 100%);} */
+    0% {transform: matrix(20, 20, 20, 20, 20, 50);}
+    100% {transform: matrix(100, 100, 100, 100, 100, 100);}
+    
+}
+.personal-hover::after{
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(252, 186, 186, 0.288);
+    z-index: -100;
+    position: absolute;
+    overflow-x: hidden;
+    top: 10px;
+    left: -216px;
 }
 .personal-hover-left-side ul{ 
     display: flex !important;
@@ -69,7 +89,7 @@ body{
     color: black !important;
 }
 .personal-hover-left-side ul li a:hover{ 
-    font-size: 14.5px;
+    transform: scaleX(1.05);
     transition: 0.2s linear;
 }
 .personal-hover-right-side{
@@ -98,7 +118,8 @@ body{
     color: #000000;  
 }
 .personal-hover-right-side ul li a:hover{ 
-    font-size: 14.5px;
+    /* transform: scaleX(1.05); */
+    transform: scaleX(1.05);
     transition: 0.2s linear;
 }
 /* business hover dropdown */
@@ -132,7 +153,7 @@ body{
     color: black !important;
 }
 .business-hover-left-side ul li a:hover{ 
-    font-size: 14.5px;
+    transform: scaleX(1.05);
     transition: 0.2s linear;
 }
 .business-hover-right-side{
@@ -162,7 +183,7 @@ body{
 }
 
 .business-hover-right-side ul li a:hover{ 
-    font-size: 14.5px;
+    transform: scaleX(1.05);
     transition: 0.2s linear;
 }
 
@@ -197,7 +218,7 @@ body{
     color: black !important;
 }
 .company-hover-left-side ul li a:hover{ 
-    font-size: 14.5px;
+    transform: scaleX(1.05);
     transition: 0.2s linear;
 }
 /* end of company link hover dropdown */
@@ -231,7 +252,7 @@ body{
     color: black !important;
 }
 .help-hover-left-side ul li a:hover{ 
-    font-size: 14.5px;
+    transform: scaleX(1.05);
     transition: 0.2s linear;
 }
 /* end of help dropdown link hover */
@@ -819,6 +840,12 @@ body{
     }
 }
 @media only screen and (max-width: 521px) {
+    .company-logo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+    }
     .phone-money-section{
         width: 100%;
         margin: auto;
@@ -968,4 +995,90 @@ body{
         display: flex;
         flex-direction: column;
     }
+}
+@media screen and (min-width: 522px) and (max-width: 575px) {
+    .company-logo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.testimony-card{
+    padding: 40px;
+    width: 100%;
+    flex-wrap: nowrap;
+    animation: scrolling 15s linear infinite;
+}
+@keyframes scrolling {
+    0% {transform: translateX(0px);}
+    100% {transform: translateX(-800px);}  
+}
+.testimony-card p{
+    font-size: 14px;
+    text-align: justify;
+    color: black;
+}
+.testimony-3{
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgb(240, 239, 239);
+    padding: 20px 10px;
+    min-width: 400px;
+    height: 250px;
+    flex: 1 1 200px;
+    box-sizing: border-box;
+}
+.col-flex{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.freedom-section{
+    padding: 40px 10%;
+}
+.freedom-section h1{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.checkout-table {
+    box-shadow: 20px 20px 50px 0px rgb(230, 229, 229);
+    padding: 0 10px;
+
+}
+.checkout-table div{
+    padding: 10px 40px;
+    border: 1px solid rgba(187, 185, 185, 0.555);
+}
+.checkout-table p{
+    color: black;
+}
+.checkout-table h5{
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.partners-section{
+    background-color: #fbfbfb;
+    padding: 8% 10%;
+}
+.partners-section h1{
+    margin-bottom: 8%;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+.partners-logo{
+    gap: 2.5rem;
+}
+.partner-img1:hover{
+    filter: brightness(1.2);
+}
+.partner-img3:hover{
+    filter: grayscale();
+}
+.partner-img4:hover{
+    filter: grayscale();
+}
+.partner-img5:hover{
+    filter: grayscale();
 }
