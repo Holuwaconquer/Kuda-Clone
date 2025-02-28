@@ -262,14 +262,16 @@ body{
     box-shadow: 0px 0px 29px #ececec;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     
 }
 .nav-side1{
     display: grid;
     grid-template-columns: 1fr 3fr;
     justify-content: space-between;
-    align-items: center;
+}
+.nav-ul{
+    display: flex;
 }
 .nav-side1 ul li{
     display: inline;
@@ -283,6 +285,7 @@ body{
     font-weight: 700;
     font-size: 14px;
 }
+
 .nav-side2{
     margin-right: 20px;
 }
@@ -294,7 +297,7 @@ body{
     padding: 0 20px;    
     margin-right: 15px;
 }
-.nav-side2 .join-kuda{
+.nav-side2 .join-kuda2{
     border: none;
     padding: 10px 30px;
     background-color: #40196d;
@@ -305,7 +308,7 @@ body{
     margin-right: 35px;
 }
 
-.join-kuda:hover{
+.join-kuda2:hover, .join-kuda4:hover{
     transition: 0.6s;
     transform: translateY(-4px) !important;
 }
@@ -352,10 +355,16 @@ body{
 .side-2-anime2{
     position: absolute;
 }
-.circleimg{
+.circleimg img:first-child{
     position: absolute; 
     bottom: 30px; 
-    right: 220px;
+    right: 180px;
+    z-index: 1;
+}
+.circleimg img:last-child{
+    position: absolute; 
+    bottom: 80px; 
+    right: 340px;
 }
 .circle2{
     position: relative;
@@ -641,6 +650,7 @@ body{
         overflow-y: hidden !important;
     }
     .join-kuda2{
+        display: none;
         border: none;
         padding: 10px 30px;
         background-color: #40196d;
@@ -649,15 +659,6 @@ body{
         border-radius: 10px;
         font-weight: 700;
         margin-right: 10px;
-    }
-    .join-kuda3{
-        border: none;
-        padding: 10px 30px;
-        background-color: #d5b4fafd;
-        color: black;
-        font-size: 14px;
-        border-radius: 10px;
-        font-weight: 700;
     }
     .mobile-sign{
         margin-top: 40px;
@@ -674,19 +675,11 @@ body{
         color: #40196d;
         text-decoration: none;
     }
-    
-    .join-kuda2:hover{
-        transition: 0.6s;
-        transform: translateY(-4px) !important;
-    }
     .money-africa{
         display: flex;
         flex-direction: column;
         text-align: center;
         justify-content: center;
-    }
-    .join-kuda{
-        display: none;
     }
     .navbar-section{
         justify-content: space-between;
@@ -1049,7 +1042,7 @@ body{
 }
 .checkout-table div{
     padding: 10px 40px;
-    border: 1px solid rgba(187, 185, 185, 0.555);
+    border: 1px solid rgba(187, 185, 185, 0.274);
 }
 .checkout-table p{
     color: black;
@@ -1081,4 +1074,116 @@ body{
 }
 .partner-img5:hover{
     filter: grayscale();
+}
+.footer-wrapper{
+    padding: 5% 8%;
+
+    border-top: 1px solid rgb(223, 223, 223);
+}
+.footer1 h4{
+    font-size: 16px;
+}
+.footer1 ul{
+    padding: 0;
+}
+.footer1 ul li{
+    list-style-type: none;
+    font-size: 14px;  
+    padding: 10px 0;
+}
+.footer1 ul li a{
+    text-decoration: none;
+    color: black !important;
+}
+.logo-link{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.footer2 h4{
+    font-size: 16px;
+}
+.footer2 p{
+    font-size: 14px; 
+    color: black; 
+}
+.footer2 a{
+    font-size: 14px;
+    font-weight: bolder; 
+}
+.footer3 p{
+    font-size: 13px;
+    color: rgb(131, 130, 130);
+}
+.grid-more{
+    padding: 4% 8%;
+}
+.grid-more .headtext{
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.grid-more-row{
+    gap: 2rem;
+}
+.grid-more-row .card-2{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 2px #eeeeee;
+}
+.grid-more-row h1{
+    text-align: left !important;
+    font-size: 1.5em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.grid-more-row h1 a{
+    text-decoration: none;
+}
+.grid-more-row p{
+    color: black;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+.grid-more-row .svg-container{
+    fill: #40196d;
+}
+.showcase2{
+    padding: 4% 8%;
+    margin-bottom: 6%;
+}
+.showcase2-row{
+    background-color: rgb(235, 238, 255);
+    padding: 6%;
+    border: 1px solid rgba(197, 197, 197, 0.418);
+    border-radius: 5px;
+    box-shadow: 20px 20px 50px 0px rgb(230, 229, 229);
+}
+.showcase2 h1{
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 2em;
+}
+.showcase2-row p{
+    color: black;
+}
+.showcase2-row .join-kuda4{
+    border: none;
+    padding: 10px 30px;
+    background-color: #40196d;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 10px;
+    font-weight: 700;
+    margin-right: 35px;
+}
+.social-icons a{
+    margin-right: 10px; 
+    background-color: rgb(223, 227, 255); 
+    padding: 5px 8px; 
+    border: 1px solid #40196d; 
+    border-radius: 50%;
 }
